@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DDL">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DML">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="DESKTOP-3I2332L\SQLEXPRESS:DESKTOP-3I2332L\ec1yps_">
-          <Created>2025-02-04T17:26:01.6751598+03:00</Created>
+          <Created>2025-02-06T19:15:07.732411+03:00</Created>
           <Type>SQL</Type>
           <Server>DESKTOP-3I2332L\SQLEXPRESS</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
-          <InitialDB>PV_319</InitialDB>
+          <InitialDB>PV_319_DDL</InitialDB>
           <LoginTimeout>30</LoginTimeout>
           <TrustServerCertificate>True</TrustServerCertificate>
           <HostNameInServerCertificate />
@@ -22,47 +22,35 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="SQLQuery1- CREATE DATABASE.sql">
+        <FileNode Name="SQLQuery0 - AGGREGATION.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1- CREATE DATABASE.sql</FullPath>
+          <FullPath>SQLQuery0 - AGGREGATION.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2 - CREATE TABLE Directions.sql">
+        <FileNode Name="SQLQuery0 - SELECT.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery2 - CREATE TABLE Directions.sql</FullPath>
+          <FullPath>SQLQuery0 - SELECT.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2 - CREATE TABLE Groups.sql">
+        <FileNode Name="SQLQuery1 - INSERT Directions.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery2 - CREATE TABLE Groups.sql</FullPath>
+          <FullPath>SQLQuery1 - INSERT Directions.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2 - CREATE TABLE Students.sql">
+        <FileNode Name="SQLQuery1 - INSERT Groups.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery2 - CREATE TABLE Students.sql</FullPath>
+          <FullPath>SQLQuery1 - INSERT Groups.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2 - CREATE TABLE Teachers.sql">
+        <FileNode Name="SQLQuery1 - UPDATE Groups.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery2 - CREATE TABLE Teachers.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery3 - CREATE TABLE Disciplines.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery3 - CREATE TABLE Disciplines.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery4 - CREATE TABLE Schedule.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery4 - CREATE TABLE Schedule.sql</FullPath>
+          <FullPath>SQLQuery1 - UPDATE Groups.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
