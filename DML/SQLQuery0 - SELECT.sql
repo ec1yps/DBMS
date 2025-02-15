@@ -1,4 +1,4 @@
-USE PV_319_DDL;
+USE PV_319_Import;
 GO
 
 --SELECT 
@@ -14,4 +14,4 @@ GO
 --AND direction = direction_id
 --ORDER BY N'Дата рождения' DESC;
 
-SELECT * FROM Teachers;
+SELECT * FROM Disciplines;
