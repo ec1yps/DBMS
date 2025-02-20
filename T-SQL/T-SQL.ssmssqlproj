@@ -34,6 +34,42 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery1 - Schedule.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery2 - CREATE PROC PrintScheduleForGroup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - CREATE PROC PrintScheduleForGroup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2 - CREATE PROC PrintScheduleForGroupPeriod.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - CREATE PROC PrintScheduleForGroupPeriod.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2 - CREATE PROC SheduleForStacionarGroup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - CREATE PROC SheduleForStacionarGroup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2 - Schedule procedure test.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - Schedule procedure test.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3 - CREATE PROCEDURE CountSalary.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery3 - CREATE PROCEDURE CountSalary.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3 - CREATE TABLE Salary.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery3 - CREATE TABLE Salary.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
