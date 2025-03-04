@@ -13,4 +13,5 @@ GO
 --EXEC @salary = sp_CountTeachersMonthSalary N'Ковтун', 2024, 06;
 --PRINT (@salary);
 
-EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Процедурное программирование %', N'Ковтун', N'2023-11-23', N'18:30', 6, 2, 0
+EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Процедурное программирование %', N'Ковтун', N'2023-11-23', N'18:30', 6, 2, 0;
+--EXEC sp_PrintScheduleForGroup N'PV_319';
