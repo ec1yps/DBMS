@@ -88,6 +88,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery4 - SELECT COUNT TotalLessonsPerLearning.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery7 - UPDATE Holidays.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-3I2332L\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-3I2332L\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - UPDATE Holidays.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
