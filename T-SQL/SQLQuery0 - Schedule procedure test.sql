@@ -13,5 +13,11 @@ GO
 --EXEC @salary = sp_CountTeachersMonthSalary N'Ковтун', 2024, 06;
 --PRINT (@salary);
 
-EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Процедурное программирование %', N'Ковтун', N'2023-11-23', N'18:30', 6, 2, 0;
---EXEC sp_PrintScheduleForGroup N'PV_319';
+DELETE FROM Schedule;
+
+EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Процедурное программирование%', N'Ковтун', N'2023-11-23', N'18:30', 4, 2, 1;
+EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Hardware%', N'Ковтун', N'2023-11-25', N'18:30', 6, 2, 0;
+EXEC sp_ScheduleForStacionarGroup N'PV_319', N'Объектно%', N'Ковтун', N'18:30';
+EXEC sp_ScheduleForStacionarGroup N'PV_319', N'%UML%', N'Ковтун', N'18:30';
+
+EXEC sp_PrintScheduleForGroup N'PV_319';
