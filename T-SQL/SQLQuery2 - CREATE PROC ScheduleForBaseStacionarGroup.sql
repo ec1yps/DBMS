@@ -7,7 +7,7 @@ ALTER PROCEDURE sp_ScheduleForBaseStacionarGroup
 	@discipline_name	NVARCHAR(150),
 	@teacher_last_name	NVARCHAR(50),
 	@start_date			DATE,
-	@time				TIME(0),
+	--@time				TIME(0),
 --	@learning_1			TINYINT,
 --	@learning_2			TINYINT,
 --	@learning_3			TINYINT,
@@ -16,10 +16,11 @@ ALTER PROCEDURE sp_ScheduleForBaseStacionarGroup
 	@first_week_present	BIT
 AS
 BEGIN
-	DECLARE @group		AS	INT		=	(SELECT group_id		FROM Groups			WHERE group_name	=	@group_name);
-	DECLARE @discipline	AS	SMALLINT=	(SELECT discipline_id	FROM Disciplines	WHERE discipline_name LIKE	@discipline_name);
-	DECLARE @teacher	AS	SMALLINT=	(SELECT teacher_id		FROM Teachers		WHERE last_name		=	@teacher_last_name);
-	DECLARE @date		AS	DATE	=	@start_date;
+	DECLARE @time		AS TIME(0)	=	(SELECT start_time FROM Groups WHERE group_name = @group_name);
+	DECLARE @group		AS INT		=	(SELECT group_id		FROM Groups			WHERE group_name	=	@group_name);
+	DECLARE @discipline	AS SMALLINT =	(SELECT discipline_id	FROM Disciplines	WHERE discipline_name LIKE	@discipline_name);
+	DECLARE @teacher	AS SMALLINT =	(SELECT teacher_id		FROM Teachers		WHERE last_name		=	@teacher_last_name);
+	DECLARE @date		AS DATE	=	@start_date;
 	DECLARE @current_week_present AS BIT = @first_week_present;
 	
 	DECLARE @number_of_lessons TINYINT	=	(SELECT number_of_lessons FROM Disciplines WHERE discipline_id = @discipline);

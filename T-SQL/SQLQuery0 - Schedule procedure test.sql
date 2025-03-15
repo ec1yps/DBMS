@@ -15,8 +15,8 @@ GO
 
 DELETE FROM Schedule;
 
-EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Процедурное программирование%', N'Ковтун', N'2023-11-23', N'18:30', 4, 2, 1;
-EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Hardware%', N'Ковтун', N'2023-11-25', N'18:30', 6, 2, 0;
+EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Процедурное программирование%', N'Ковтун', N'2023-11-23', 4, 2, 1;
+EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Hardware%', N'Ковтун', N'2023-11-25', 6, 2, 0;
 EXEC sp_ScheduleForStacionarGroup N'PV_319', N'Объектно%', N'Ковтун';
 EXEC sp_ScheduleForStacionarGroup N'PV_319', N'%UML%', N'Ковтун';
 
