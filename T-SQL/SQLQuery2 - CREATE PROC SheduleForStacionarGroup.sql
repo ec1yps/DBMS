@@ -12,7 +12,7 @@ BEGIN
 	
 	SET DATEFIRST 1;
 
-	DECLARE @start_date			AS DATE		=	dbo.GetLastDayForGroup(@group_name);
+	DECLARE @start_date			AS DATE		=	dbo.GetNextLearningDateFor(@group_name);
 	DECLARE @time				AS TIME(0)	=	(SELECT start_time FROM Groups WHERE group_name = @group_name);
 	DECLARE @group				AS INT		=	(SELECT group_id			FROM Groups			WHERE group_name = @group_name);
 	DECLARE @discipline			AS SMALLINT =	(SELECT discipline_id		FROM Disciplines	WHERE discipline_name LIKE @discipline_name);
@@ -52,13 +52,15 @@ BEGIN
 
 		PRINT('-------------------------------------------');
 
-		IF(DATEPART(WEEKDAY, @date)=dbo.GetMaxLearningDayFor(@group_name)+1)
-		BEGIN
-			SET @date = DATEADD(DAY, 3, @date);
-		END
-		ELSE
-		BEGIN
-			SET @date = DATEADD(DAY, 2, @date);
-		END
+		--IF(DATEPART(WEEKDAY, @date)=dbo.GetMaxLearningDayFor(@group_name)+1)
+		--BEGIN
+		--	SET @date = DATEADD(DAY, 3, @date);
+		--END
+		--ELSE
+		--BEGIN
+		--	SET @date = DATEADD(DAY, 2, @date);
+		--END
+
+		SET @date = dbo.GetNextLearningDateFor(@group_name);
 	END
 END

@@ -14,6 +14,16 @@ GO
 
 --PRINT(dbo.GetEasterDate(2025));
 
-PRINT(dbo.GetLastDayForGroup(N'PV_319'));
-PRINT(dbo.GetMaxLearningDayFor(N'PV_319'));
-PRINT(dbo.GetNextLearningDayFor(N'PV_319'));
+--PRINT(dbo.GetLastDayForGroup(N'PV_319'));
+--PRINT(dbo.GetMaxLearningDayFor(N'PV_319'));
+--PRINT(dbo.GetNextLearningDayFor(N'PV_319'));
+
+DECLARE @group AS NVARCHAR(10) = N'PV_319';
+DECLARE @date AS DATE = dbo.GetLastDayForGroup(@group);
+WHILE @date < '2025-01-01'
+BEGIN
+	PRINT(@date);
+	PRINT(DATENAME(WEEKDAY, @date));
+	PRINT('----------------')
+	SET @date = dbo.GetNextLearningDateFor(@group);
+END
